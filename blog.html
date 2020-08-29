@@ -3,10 +3,15 @@
 <head>
   <title>Opinion | Data Quanta by CJ</title>
 
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
 <style>
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 60px;
   font-size: 40px;
   text-align: center;
   background: white;
@@ -14,20 +19,20 @@
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
-  padding: 20px;
+  padding: 40px;
   background: #f1f1f1;
 }
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
   float: left;
-  width: 99%;
+  width: 100%;
 }
 /* Right column: Adjust width if needed */
 .rightcolumn {
-  float: left;
-  width: 1%;
-  padding-left: 20px;
+  float: right;
+  width: 0%;
+  /*padding-left: 10px;-->*/
 }
 /* Clear floats after the columns */
 .row:after {
@@ -54,10 +59,45 @@ body {
 
 
 
-<body>
-  <div class="header">
-    <h2>Opinion</h2>
-  </div>
+<body id="page-top">
+
+  <!-- Navigation Scrolling Nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Data Quanta</a>
+      <!--Button for mobile devices -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a  class="nav-link js-scroll-trigger" href="#page-top">Opinion</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link js-scroll-trigger" href="#">Sports Analytics</a>
+            </li>
+            <!--<li class="nav-item"> <a  class="nav-link js-scroll-trigger" href="#">Economy</a> </li>
+            <li class="nav-item"> <a  class="nav-link js-scroll-trigger" href="#">Politics</a> </li>
+            <li class="nav-item"> <a  class="nav-link js-scroll-trigger" href="#">Finance</a> </li>
+            <li class="nav-item"> <a class="p-2 text-muted" href="#">Science</a>
+            <li class="nav-item"> <a class="p-2 text-muted" href="#">Technology</a>
+            <li class="nav-item"> <a class="p-2 text-muted" href="#">Health</a>
+            <li class="nav-item"> <a class="p-2 text-muted" href="#">Travel</a>-->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger"  href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Opinion</h1>
+      </div>
+  </header>
+
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
@@ -75,11 +115,34 @@ body {
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="py-5 bg-dark">
+    <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Data Quanta 2020</p>
+    </div>
     <!-- /.container -->
   </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+  </html>
+
 
 
 </body>
